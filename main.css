@@ -1,0 +1,105 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.parent {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.my-project {
+    width: 400px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.my-project img {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8%;
+}
+
+.my-project h1 {
+    color: white;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.my-project .paragraph {
+    color: hsl(215, 51%, 70%);
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.my-project .price {
+    display: flex;
+    width: calc(100% - 40px);
+    justify-content: space-between;
+}
+
+.my-project .price .price1 {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.days {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 0px);
+    position: relative;
+
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid hsl(215, 32%, 27%);
+    width: calc(100% - 40px);
+    height: 100%;
+    left: 20px;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer img {
+    width: 100px;
+    height: 100px;
+}
+
+.day {
+    color: hsl(215, 51%, 70%);
+}
+
+.attribution {
+    color: white;
+}
+
+@media (min-width:333px) {
+    .my-project {
+        width: 300px;
+    }
+}
